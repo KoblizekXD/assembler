@@ -3,11 +3,19 @@ package io.github.koblizekxd.assembler.files;
 public final class Registers {
     private Registers() {}
 
+    /**
+     * All x86_64 registers use this class.
+     * It extends {@link x86} to ability to use x86 registers in x64.
+     */
     public static class x86_64 extends x86 {
         public x86_64(String name) {
             super(name);
         }
     }
+
+    /**
+     * All x86 registers use this class.
+     */
     public static class x86 {
         private final String name;
         public x86(String name) {

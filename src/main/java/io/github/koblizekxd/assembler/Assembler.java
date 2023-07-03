@@ -14,12 +14,12 @@ public final class Assembler {
         Assembler.elf = elf;
         Assembler.assembler = assembler;
     }
-    private static void checkFormat() {
+    private static void checkFormatForNil() {
         if (elf == null || assembler == null) {
             throw InvalidCompilationDataException.UNSPECIFIED_FORMAT;
         }
     }
     public static void compile(AssemblyFile file) {
-
+        checkFormatForNil();
     }
 }
