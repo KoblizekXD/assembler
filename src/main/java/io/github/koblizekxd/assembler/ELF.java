@@ -7,7 +7,7 @@ public final class ELF {
         this.dataName = dataName;
     }
 
-    public static final ELF elf_x86_64 = new ELF("elf_x86_64");
-    public static final ELF elf32_x86_64 = new ELF("elf32_x86_64");
-    public static final ELF i386 = new ELF("i386");
+    public static final ELF elf64 = new ELF("elf64");
+    public static final ELF elf32 = new ELF("elf32");
+    public static final ELF elfx32 = new ELF("elfx32");
 }
