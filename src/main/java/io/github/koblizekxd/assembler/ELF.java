@@ -7,7 +7,18 @@ public final class ELF {
         this.dataName = dataName;
     }
 
+    public String getDataName() {
+        return dataName;
+    }
+
+    /**
+     * ELF64, also known as x86-64, is a 64-bit ELF format.
+     * This format does support 32-bit instructions.
+     */
     public static final ELF elf64 = new ELF("elf64");
+    /**
+     * ELF32, also known as x86, is a 32-bit ELF format.
+     * This format does not support 64-bit instructions.
+     */
     public static final ELF elf32 = new ELF("elf32");
-    public static final ELF elfx32 = new ELF("elfx32");
 }
